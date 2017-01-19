@@ -1,0 +1,308 @@
+/*фоновая картинка*/
+body{
+    background-image: url(img/bg.jpg)
+}
+
+/*общий блок для выравнивания*/
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*верхняя шапка*/
+.top_head{
+    padding: 0;
+    height: 97px;
+}
+
+.top_left{
+    width: 480px;
+    float: left;
+    text-align: left;
+    padding-top: 33px;
+}
+
+.top_head .search{
+    width: 178px;
+    height: 26px;
+    padding-left: 10px;
+    float: left;
+}
+
+.s_btn{
+    width: 32px;
+    height: 32px;
+    float: left;
+    //margin-top: 33px;
+    background-color:rgb(28,174,221);
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0px;
+}
+
+.top_right{
+    width: 480px;
+    float: left;
+    padding-top: 33px;
+    text-align: right;
+    font-family: Tahoma;
+    color: grey;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.top_right a{
+    margin-top: 6px 
+}
+
+/*основной блок*/
+.main_block{
+    clear: both;
+     background-color: white;
+}
+
+/*шапка основного блока*/
+.header{
+    height: 140px;
+    background: #F9F9F9;
+}
+
+.logo{
+    width: 300px;
+    float: left;
+    margin: 40px 0 40px 40px
+}
+
+.top_menu{
+    text-align: right;
+    width: 610px;
+    float: right;
+    margin-top: 60px;
+    margin-right: 10px;
+}
+
+.top_menu li{
+    display: inline;
+    font-size: 14px;
+    margin: 0;
+    padding: 15px 11px;
+    text-align: center;
+}
+
+.menu{
+    display: inline-block;
+}
+
+.top_menu li:hover{
+    background: rgb(224,224,224);
+}
+
+.top_menu li a{
+    color: black;
+    text-decoration: none;
+}
+
+.main_body{
+    border-top: 1px dotted grey;
+    border-bottom: 1px dotted grey;
+    height: 680px;
+}
+
+/*левая панель*/
+.left_bar{
+    width: 68%;
+    height: 661px;
+    text-align: center;
+    border-right: 1px dotted grey;
+    padding-top: 20px;
+    margin-top: -5px;
+    display: inline-block;
+    float: left;
+}
+
+.bg{
+   width: 590px;
+    height: 355px;
+    background: #F3F3F3;
+    margin: auto;
+    padding-top: 5px;
+}
+.nav{
+    text-align: right;
+    padding-right: 5px;
+}
+.nav_btn{
+    width: 11px;
+    height: 11px;
+    background: #C4C4C4;
+    display: inline-block;
+}
+.nav_btn.activ{
+    background: #0C0C0C
+}
+
+
+.articles_block{
+    width: 590px;
+    height: 360px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.article img{
+    margin: 10px 0;
+}
+
+/*стили для подзаголовков*/
+.subtitle{
+    font-size: 70%;
+    line-height: 150%;
+    color: grey;
+    margin-bottom: 2%
+}
+
+.article{
+    width: 45%;
+    text-align: left;
+    display: inline-block;
+}
+
+.article p{
+    line-height: 140%;
+}
+
+.article.left{
+    float: left
+}
+.article.right{
+    float: right;
+}
+
+.main_body a{
+    text-decoration: none;
+    color: #1CAEDD;
+}
+
+/*правая панель*/
+.right_bar{
+    width: 31.88%;
+    display: inline-block;
+    float: right;
+}
+
+.right_bar .news a{
+    font-size: 70%;
+    display: block;
+    margin-bottom: 5px;
+}
+.more{
+    display: block;
+    font-size: 90%;
+    border-bottom: 1px dotted grey;
+    padding: 0 0 20px 20px;
+}
+
+/*блок новостей*/
+.news{
+    height: 55%;
+    padding: 20px 20px 0 20px;
+}
+.news p{
+    font-size: 90%
+}
+
+/*блок с цитатой*/
+.quotes{
+    height: 45%;
+}
+
+
+.news_item{
+    margin: 20px 0;
+    line-height: 1.5
+}
+
+.quotes{
+    padding: 20px;
+    line-height: 1.5;
+}
+.quote{
+    font-style: italic;
+    margin-top: 8%;
+    font-size: 90%;
+    margin-bottom: 4%
+}
+.quotes p{
+    font-size: 90%;
+}
+/*стил и кавычки цитаты*/
+.quote:before{
+    color: #D1D1D1;
+    content: "\201C"; /* Непечатаемый символ слева */
+    font-size: 5em;
+    line-height: 0.1em;
+    margin-right: 0.2em;
+    margin-left: -0.1em;
+    vertical-align: -0.4em;
+}
+
+/*пустой блок для очистки float*/
+.clear{
+    clear: both
+}
+
+/*подвал*/
+footer{
+    width: 100%;
+    background: #F8F8F8;
+    text-align: center;
+}
+
+.f_item{
+    width: 20%;
+    display: inline-block;
+    margin: 20px;
+    text-align: left
+}
+.f_item h4{
+    border-bottom: 1px dotted grey;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.f_item li{
+    font-size: 70%;
+    list-style: disc;
+    line-height: 1.5;
+    margin-left: 13px
+}
+.f_item p{
+    font-size: 70%;
+    list-style: disc;
+    line-height: 1.5
+}
+footer a{
+    text-decoration: none;
+    color: #1CAEDD;
+}
+
+/*стили для блоуа копирайт*/
+.copyright{
+    padding: 20px 0 5px 0;
+    font-size: 70%;
+    color: grey;
+}
+
+.copyright a{
+    color: #444;
+}
+
+.copy_left{
+    display: inline-block;
+    text-align: left
+}
+.copy_right{
+    display: inline-block;
+    float: right;
+}
